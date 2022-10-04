@@ -129,12 +129,14 @@ main{
     background-color: rgb(236, 236, 240);;
 }
 
-.wave{
-    fill: rgb(236, 236, 240);
+main > svg{
     background-color: white;
 }
-.wave.flip{
-    transform: scaleY(-1)
+.flip{
+    transform: scaleY(-1);
+}
+.wave{
+    fill: rgb(236, 236, 240);
 }
 
 .feature{
