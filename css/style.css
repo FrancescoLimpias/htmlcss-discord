@@ -125,6 +125,8 @@ main{
     flex-direction: column-reverse;
     text-align: center;
     background-color: rgb(236, 236, 240);
+
+    padding: 3em 5%;
 }
 .feature img{
 
@@ -178,13 +180,20 @@ footer > div:first-child{
 }
 #contact-us img{
     height: 0.6em;
+    vertical-align: middle;
 }
 #contact-us select{
     background-color: transparent;
     border: none;
     color: white;
+    font-size: large;
+    appearance: none;
 
     margin-bottom: 2em;
+}
+#contact-us select option{
+    background-color: white;
+    color: black;
 }
 #contact-us i{
     font-size: xx-large;
