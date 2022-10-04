@@ -19,23 +19,40 @@ a{
     margin: 0;
     padding: 0;
 }
+.link-list a:hover, .map-section a:hover{
+    text-decoration: underline;
+}
 
 /* COMMON  */
 .button{
     padding: 0.3em 1.2em;
     border-radius: 28px;
 }
+.button:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.39);
+}
+
 .button.white{
     background-color: white;
     color: black;
 }
+.button.white:hover{
+    color:#255ee9;
+}
+
 .button.blue{
     background-color:#5865f2;
     color: white;
 }
+.button.blue:hover{
+    background-color: #707bf0;
+}
 .button.dark{
     background-color: #2c2f33;
     color: white;
+}
+.button.dark:hover{
+    background-color: #42464b;
 }
 
 /* HEADER  */
