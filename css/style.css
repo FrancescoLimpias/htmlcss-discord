@@ -8,6 +8,7 @@
 }
 body{
     font-family: "Whitney", sans-serif;
+    font-size: large;
 }
 a{
     color: white;
@@ -21,7 +22,7 @@ a{
 
 /* COMMON  */
 .button{
-    padding: 0.2em 0.5em;
+    padding: 0.3em 1.2em;
     border-radius: 28px;
 }
 .button.white{
@@ -57,15 +58,13 @@ header{
 
     width: 100%;
     padding: 0 15%;
-    height: 3em;
-
-    font-size: x-large;
+    height: 5em;
 }
 #top-nav ul{   /* Central Links */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
 }
 
 #firstLook{
@@ -74,17 +73,26 @@ header{
     justify-content: center;
     align-items: center;
 
-    height: calc(100% - 3em);
+    height: calc(100% - 5em);
     font-size: x-large;
 }
 #firstLook p{
     min-width: 400px;
     width: 50%;
     max-width: 950px;
+
+    margin-bottom: 1em;
 }
 #firstLook div{  /* "Download" & "Open Discord" Links */
     height: 2em;
     line-height: 2em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#firstLook .button{
+    margin: 10px;
 }
 
 /* MAIN  */
@@ -93,7 +101,7 @@ main{
     flex-direction: column;
     align-items: center;
 
-    font-size: X-large;
+    font-size: xx-large;
     padding: 0 0 3em;
     background-color: rgb(236, 236, 240);
 }
@@ -119,17 +127,22 @@ main{
     background-color: rgb(236, 236, 240);
 }
 .feature img{
-    flex: 0 0 400px;
 
+    max-width: 90vw;
     /* DEBUG (placeholders) */
-    width: 400px;
-    height: 300px;
+    max-height: 60vh;
 }
 .feature section{
     flex: 1 0 40%;
     max-width: 500px;
 
     padding: 1.5em;
+}
+.feature section h2{
+    margin-bottom: 1em;
+}
+.feature section p{
+    color: gray;
 }
 .feature.column section{
     max-width: 1000px;
@@ -144,7 +157,7 @@ footer{
     padding: 70px 15%;
 }
 
-/* ContactUs & Site Map  */
+/* ContactUs */
 footer > div:first-child{
     display: flex;
     justify-content: space-between;
@@ -156,18 +169,58 @@ footer > div:first-child{
     flex: 0 1 20%;
     margin-right: 1em;
 }
+#contact-us h3{
+    color: #5865f2;
+    font-family: 'Whitney', sans-serif;
+    font-weight: 900;
+
+    margin-bottom: 1em;
+}
+#contact-us img{
+    height: 0.6em;
+}
+#contact-us select{
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    margin-bottom: 2em;
+}
+#contact-us i{
+    font-size: xx-large;
+    height: 2em;
+    width: 2em;
+}
+
+/* Site Map  */
 #site-map{
     flex: 0 1 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: large;
+    font-family: 'Whitney Light', sans-serif;
 }
-.map-section{
+.map-section, .map-section *{   /* Spacing between list items & between map sections */
     margin-bottom: 1em;
+}
+.map-section h4{
+    font-size: x-large;
+    color: #5865f2;
+}
+
+/* Divider  */
+footer hr{
+    border: none;
+    border-top: 1px solid #5865f2;
+
+    margin-bottom: 1.5em;
 }
 
 /* Credits */
 footer > div:last-child{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
