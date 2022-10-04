@@ -40,8 +40,8 @@ a{
 
 /* HEADER  */
 header{
+    width: 100%;
     height: 626px;
-    text-align: center;
 
     color: white;
 
@@ -49,22 +49,35 @@ header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position: center;
+
+    /* DEBUG  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #top-nav{
+    flex: 1 2 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    width: 100%;
-    padding: 0 15%;
+    /* width: 70%; */
+    /* padding: 0 15%; */
+    margin: auto;
     height: 5em;
 }
 #top-nav ul{   /* Central Links */
+    flex: 0 0 35%;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+}
+#top-nav li{
+    margin: 1%;
+    /* font-size: 1vw; */
 }
 
 #firstLook{
