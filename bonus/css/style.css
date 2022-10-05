@@ -77,7 +77,7 @@ header{
     background-size: cover;
     /* 
         Background image centered 
-        to keep #firstLook
+        to keep #jumbotron
         over a uniform blue background 
         even when resizing window 
     */
@@ -113,7 +113,7 @@ header{
     margin: 1%;
 }
 
-#firstLook{
+#jumbotron{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +122,7 @@ header{
     height: calc(100% - 5em);
     font-size: x-large;
 }
-#firstLook p{
+#jumbotron p{
     min-width: 400px;
     width: 50%;
     max-width: 950px;
@@ -130,7 +130,7 @@ header{
     margin-bottom: 1em;
 }
 /* "Download" & "Open Discord" Links */
-#firstLook div{  
+#jumbotron div{  
     height: 2em;
     line-height: 2em;
 
@@ -138,7 +138,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
-#firstLook .button{
+#jumbotron .button{
     margin: 10px;
 }
 
